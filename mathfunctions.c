@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 int main() {
     
-    int x = 9;
+    float x = 45;
 
     x = sqrt(x);
     // x = pow(x, 2);
@@ -14,10 +15,9 @@ int main() {
     // x = log(x);
     // x = sin(x);
     // x = cos(x);
-    // x = tan(x); 
+    // x = tan(x);
 
-
-    printf("%d\n", x);
+    printf("%f\n", x);
 
     return 0;
 
