@@ -1,2 +1,2 @@
 
-    // x = cos(x);
+rate = rate / 100;
