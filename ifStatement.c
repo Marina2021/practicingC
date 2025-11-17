@@ -43,17 +43,49 @@ int main() {
 
 
 
-char name[50] = "";
+// char name[50] = "";
 
-printf("Enter your name: \n");
-fgets(name, sizeof(name), stdin);
-name[strlen(name) - 1] = '\0';
+// printf("Enter your name: \n");
+// fgets(name, sizeof(name), stdin);
+// name[strlen(name) - 1] = '\0';
 
-if(strlen(name) == 0) {
-    printf("You did not enter your name\n");
+// if(strlen(name) == 0) {
+//     printf("You did not enter your name\n");
+// }
+// else {
+//     printf("Hello %s\n", name);
+// }
+
+
+
+// NESTED IF Statement
+
+float ticketPrice = 10.00;
+bool isStudent = true; // 10% discount
+bool isSenior = false; // 20% discount
+
+// student = $9
+// senior = $8
+// student + senior - $7
+
+if(isStudent) {
+    if(isSenior) {
+    printf("You have a 10%% discount.\n"); 
+    printf("You have a 20%% discount.\n");
+    ticketPrice *= 0.7;
+    } 
+    else {
+    printf("You have a 10%% discount.\n"); 
+    ticketPrice *= 0.9;
+    } 
 }
-else {
-    printf("Hello %s\n", name);
-}
+    else{
+        if(isSenior) {
+        printf("You have a 20%% discount.\n");
+        ticketPrice *= 0.8;
+        }
+    }        
+printf("The price of the ticket is $%.2f\n", ticketPrice);
+
     return 0;
 }
