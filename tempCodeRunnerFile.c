@@ -1,2 +1,1 @@
-
-}
+void hello(char name[], int age)
