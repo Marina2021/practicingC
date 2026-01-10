@@ -1,1 +1,1 @@
-void hello(char name[], int age)
+printf("%d\n", i);
